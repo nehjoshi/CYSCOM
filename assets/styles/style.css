@@ -10,13 +10,19 @@
 
 #logo {
   height: 60px;
-  margin-top: 20px;
+}
+
+#waves {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 nav {
   position: fixed;
   top: 0;
   height: 70px;
+  z-index: 100;
   width: 100%;
   background-color: transparent;
   color: #111;
@@ -42,24 +48,24 @@ nav .logo {
 nav ul {
   display: block;
   float: right;
-  color: #fff;
 }
 
 nav ul li {
   display: inline;
   font-size: 1.2rem;
   margin: 0px 20px;
+  color: #fff;
   cursor: pointer;
 }
 
 nav ul .active {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #ffffff;
   padding-bottom: 5px;
 }
 
 nav .open-source {
-  background-color: #fff;
-  color: #002286;
+  background: #fff;
+  color: #000;
   padding: 10px 30px;
   text-align: center;
   text-decoration: none;
@@ -74,7 +80,10 @@ nav .open-source {
 }
 
 main {
-  background-color: #002286;
+  background-image: url("/assets/images/bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 70px;
 }
 
@@ -103,22 +112,25 @@ main .main-wrapper .left {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #ececec;
   font-size: 2.3rem;
   width: 50%;
+}
+
+main .main-wrapper .left h1 {
+  color: #003b4d;
 }
 
 main .main-wrapper .left p {
   font-size: 1.3rem;
   margin-top: 30px;
   line-height: 30px;
-  color: #f3f3f3;
+  color: #2e2e2e;
 }
 
 main .main-wrapper .left .button {
-  background-color: #fff;
+  background-color: #003b4d;
   border: none;
-  color: #002286;
+  color: #fff;
   padding: 15px 20px;
   text-align: center;
   text-decoration: none;
@@ -152,5 +164,19 @@ main .main-wrapper .right {
 
 main .main-wrapper .right img {
   width: 500px;
+}
+
+#section1 {
+  position: relative;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
