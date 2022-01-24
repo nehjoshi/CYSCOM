@@ -5,7 +5,68 @@
     list-style-type: none;
     text-decoration: none;
     font-family: Helvetica;
+    transition: 0.2s all ease;
   }
+//For the dark/light toggler------------------------------------------------------------------------------
+  .toggler {
+    position: absolute;
+    left: 25px;
+    top: 60px;
+    z-index: 102;
+    @media screen and (max-width: 998px) {
+        left: 10px;
+        top: 80px;
+    }
+    @media screen and (max-width: 760px) {
+        top: 20px;
+    }
+}
+.checkbox {
+    position: absolute;
+    opacity: 0;
+}
+.checkbox:checked + .label .ball{
+    transform: translateX(47px);
+}
+.label {
+    background-color: rgb(34, 28, 28);
+    display: flex;
+    border-radius: 50px;
+    height: 30px;
+    width: 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    color: rgb(204, 204, 95);
+    position: relative;
+    transition: 0.2s all ease;
+}
+.label.light {
+    background-color: #fff;
+}
+.ball {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.2s all ease;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.ball.dark {
+    background-color: rgb(34, 28, 28);
+}
+.fa-moon, .fa-sun {
+    font-size: 1.2rem;
+}
+.top-wave-wrapper {
+    @media screen and (max-width: 998px) {
+        display: none;
+    }
+}
+//------------------------------------------------------------------------------
 #logo {
     height: 60px;
 }
@@ -63,6 +124,20 @@
         width: fit-content;
     }
   }
+  nav.dark {
+    // background-color: rgb(34, 28, 28);
+    transition: 0.2s all ease;
+    background-color: #0b1339;
+    color: #fff;
+    .logo {
+      color: #fff;
+    }
+    ul {
+      li {
+        color: #fff;
+      }
+    }
+  }
 main {
     // background-color: #002286;
     background-image: url('/assets/images/bg.png');
@@ -88,6 +163,7 @@ main {
         width: 50%;
         h1 {
           color: #003b4d;
+          font-size: 4.3rem;
         }
         p {
           font-size: 1.3rem;
@@ -123,7 +199,31 @@ main {
       }
     }
   }
-
+  
+main.dark {
+  background-image: url('../images/bg-dark.png');
+  transition: 0.2s all ease;
+  .main-wrapper {
+    .left {
+      color: #fff;
+      h1 {
+        color: #fff;
+      }
+      p {
+        color: #fff;
+      }
+      .button {
+        background-color: #fff;
+        color: #000;
+      }
+    }
+    .right {
+      img {
+        width: 500px;
+      }
+    }
+  }
+}
 #section1 {
   position: relative;
   height: 100vh;

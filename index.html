@@ -6,11 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/fc236c3dc0.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>CyberSpace Club, VITCC</title>
 </head>
 
 <body>
+    <div class="toggler">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <div class="ball"></div>
+        </label>
+    </div>
     <nav>
         <img src="assets/images/logo.png" id="logo">
         <ul>
@@ -23,12 +33,17 @@
     </nav>
     <main>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="waves">
-            <path fill="#003b4d" fill-opacity="1" d="M0,160L120,144C240,128,480,96,720,106.7C960,117,1200,171,1320,197.3L1440,224L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
-          </svg>
+            <path fill="#003b4d" fill-opacity="1" id="wave"
+                d="M0,160L120,144C240,128,480,96,720,106.7C960,117,1200,171,1320,197.3L1440,224L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
+            </path>
+        </svg>
         <div class="main-wrapper">
             <div class="left">
-                <h1>Naam socho</h1>
-                <p>Started off with a few people having cyber safety in mind, the club now boasts a big gathering of
+                <h1 class="animate__animated animate__fadeInDown">
+                    <q>Privacy is a myth.</q>
+                </h1>
+                <p class="animate__animated animate__fadeInUp">Started off with a few people having cyber safety in
+                    mind, the club now boasts a big gathering of
                     members and associates alike. Join us on our mission to make the cyber space a safer place.</p>
                 <div class="button">READ MORE</div>
             </div>
