@@ -139,7 +139,10 @@
     }
   }
 main {
+
     // background-color: #002286;
+    position: sticky;
+    top: 0;
     background-image: url('/assets/images/bg.png');
     background-position: center center;
     background-repeat: no-repeat;
