@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,12 +9,18 @@
   font-family: Helvetica;
   -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
+  font-family: Nunito;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .toggler {
   position: absolute;
-  left: 25px;
-  top: 60px;
+  left: 15px;
+  top: 80px;
   z-index: 102;
 }
 
@@ -46,8 +53,8 @@
   display: -ms-flexbox;
   display: flex;
   border-radius: 50px;
-  height: 30px;
-  width: 80px;
+  height: 20px;
+  width: 70px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -67,8 +74,8 @@
 
 .ball {
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   background-color: #fff;
   border-radius: 50%;
   -webkit-transition: 0.2s all ease;
@@ -84,7 +91,7 @@
 }
 
 .fa-moon, .fa-sun {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
 
 @media screen and (max-width: 998px) {
@@ -107,18 +114,18 @@ nav {
   position: fixed;
   top: 0;
   height: 70px;
-  z-index: 100;
+  z-index: 999;
   width: 100%;
   background-color: transparent;
   color: #111;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 0px 40px;
   font-family: Helvetica;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -162,6 +169,14 @@ nav .open-source {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+nav #name {
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  color: #fff;
+  font-size: 1.2rem;
 }
 
 nav.dark {
@@ -219,22 +234,33 @@ main .main-wrapper .left {
   width: 50%;
 }
 
+main .main-wrapper .left #click {
+  color: #9b0000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
 main .main-wrapper .left h1 {
   color: #003b4d;
-  font-size: 4.3rem;
+  font-weight: 900;
+  font-size: 5rem;
 }
 
 main .main-wrapper .left p {
   font-size: 1.3rem;
   margin-top: 30px;
   line-height: 30px;
-  color: #2e2e2e;
+  font-weight: 200;
+  color: #222222;
 }
 
 main .main-wrapper .left .button {
-  background-color: #003b4d;
+  background-color: #F2962F;
   border: none;
-  color: #fff;
+  color: black;
   padding: 15px 20px;
   text-align: center;
   text-decoration: none;
@@ -289,25 +315,56 @@ main.dark .main-wrapper .left p {
 }
 
 main.dark .main-wrapper .left .button {
-  background-color: #fff;
+  background: #ffffff;
   color: #000;
 }
 
 main.dark .main-wrapper .right img {
-  width: 500px;
+  width: 300px;
 }
 
-#section1 {
+.section-1 {
+  height: 120vh;
+  padding-bottom: 20px;
+  z-index: 100;
+  background-color: #003b4d;
   position: relative;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  color: #fff;
+}
+
+.section-1 h1 {
+  font-size: 4.3rem;
+  padding-top: 70px;
+  text-align: center;
+}
+
+.section-1 p {
+  font-size: 1.3rem;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.section-1 .line {
+  width: 10%;
+  border: 2.5px solid #F2962F !important;
+  border-radius: 5px;
+  background: #F2962F !important;
+  margin: 10px auto;
+}
+
+.section-1 .info-card img {
+  margin: 0 auto;
+  width: 250px;
+  display: block;
+}
+
+.section-1 .info-card h2 {
+  margin-top: 30px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.section-1.dark {
+  background-color: #0b1339;
 }
 /*# sourceMappingURL=style.css.map */

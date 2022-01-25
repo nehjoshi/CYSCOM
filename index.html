@@ -8,13 +8,16 @@
     <link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://kit.fontawesome.com/fc236c3dc0.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>CyberSpace Club, VITCC</title>
+    <link rel="icon" href="/assets/images/logo.png" />
+    <title>Cybersecurity Community (CYSCOM) VITCC</title>
 </head>
 
 <body>
 
-    <nav>
+    <nav class="nav">
         <div class="toggler">
             <input type="checkbox" class="checkbox" id="checkbox">
             <label for="checkbox" class="label">
@@ -24,10 +27,11 @@
             </label>
         </div>
         <img src="assets/images/logo.png" id="logo">
+        <p id="name">CYSCOM</p>
         <ul>
             <li class="active">Home</li>
             <li>Our Team</li>
-            <li>Open Source</li>
+            <li>Leaderboard</li>
             <li>Blogs</li>
         </ul>
         <div class="open-source">OPEN SOURCE</div>
@@ -41,20 +45,46 @@
         <div class="main-wrapper">
             <div class="left">
                 <h1 class="animate__animated animate__fadeInDown">
-                    Think before you click.
+                    Think before you <span id="click">click</span>.
                 </h1>
                 <p class="animate__animated animate__fadeInUp">Started off with a few people having cyber safety in
                     mind, the club now boasts a big gathering of
                     members and associates alike. Join us on our mission to make the cyber space a safer place.</p>
-                <div class="button">READ MORE</div>
+                <a href="#section1">
+                    <div class="button">READ MORE</div>
+                </a>
             </div>
             <div class="right">
-                <img src="./assets/images/transparent.png" alt="">
+                <img src="/assets/images/lock.png" alt="" style="width: 300px;" id="lock">
             </div>
         </div>
     </main>
-    <section style="height: 100vh; z-index: 100; background-color: #003b4d; position: sticky; top: 0vh; display: flex; align-items: center">
-        <h1>HELLo</h1>
+    <section class="section-1" id="section1">
+        <h1>Our Mission</h1>
+        <p>The Cybersecurity Student Community (CYSCOM), VITCC aims to spread awareness about cybersecurity</p>
+        <div class="line"></div>
+        <div class="container">
+            <div class="row mt-5 ">
+                <div class="col-3 info-card">
+                    <img src="assets/images/blogs.png" alt="">
+                    <h2 class="mt-5">Blogs</h2>
+                    <p>We spread awareness regarding cybersecurity through weekly blogs, social media posts and more.</p>
+                </div>
+                <div class="col-3 info-card">
+                    <img src="assets/images/events.png" alt="">
+                    <h2>Events</h2>
+                    <p>Speaker sessions, competitions and periodic conferences all help to spread the message of security.</p>
+                </div>
+                <div class="col-3 info-card">
+                    <img src="assets/images/blogs.png" alt="">
+                    <h2>Blogs</h2>
+                </div>
+                <div class="col-3 info-card">
+                    <img src="assets/images/blogs.png" alt="">
+                    <h2>Blogs</h2>
+                </div>
+            </div>
+        </div>
     </section>
     <section style="height: 100vh; z-index: 100; background-color: blue; position: sticky; top: 0vh;"></section>
     <section style="height: 100vh"></section>
