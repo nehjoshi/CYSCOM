@@ -239,18 +239,26 @@ main {
       width: 100%;
       margin: 0px auto;
       // background-color: rgba(140, 140, 140, 0.1);
-      height: 100vh;
+      min-height: 100vh;
       border-radius: 20px;
       display: flex;
       justify-content: space-between;
       padding: 30px 100px;
+      @media screen and (max-width: $lg){
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 30px 20px;
+      }
       .left {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // color: rgb(236, 236, 236);
         font-size: 2.3rem;
         width: 50%;
+        @media screen and (max-width: $lg){
+          width: 90%;
+        }
         #click {
           color: rgb(155, 0, 0);
           user-select: none;
@@ -259,7 +267,10 @@ main {
         h1 {
           color: #003b4d;
           font-weight: 900;
-          font-size: 5rem;
+          font-size: clamp(3.5rem, 5vw, 5rem);
+          @media screen and (max-width: $lg){
+            text-align: center;
+          }
         }
         p {
           font-size: 1.3rem;
@@ -276,23 +287,32 @@ main {
             color: rgb(0, 0, 0);
             padding: 15px 20px;
             text-align: center;
-            text-decoration: none;
             display: inline-block;
             font-size: 1.2rem;
-            margin: 30px 0px;
+            margin-top: 30px;
             cursor: pointer;
             width: fit-content;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            @media screen and (max-width: $lg){
+              margin: 0 auto;
+              display: block;
+            }
         }
       }
       .right {
-        width: 50%;
         display: flex;
         flex-direction: column;
+        width: 50%;
         justify-content: center;
         align-items: center;
+        @media screen and (max-width: $lg){
+          width: 90%;
+        }
         img {
             width: 500px;
+            @media screen and (max-width: $lg){
+              width: 100px !important;
+            }
         }
       }
     }
@@ -315,15 +335,10 @@ main.dark {
         color: #000;
       }
     }
-    .right {
-      img {
-        width: 300px;
-      }
-    }
   }
 }
 .section-1 {
-  height: 120vh;
+  min-height: 120vh;
   padding-bottom: 20px; 
   z-index: 100; 
   background-color: #003b4d; 
