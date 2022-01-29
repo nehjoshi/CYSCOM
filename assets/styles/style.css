@@ -538,3 +538,51 @@ main.dark .main-wrapper .left .button {
   background-color: #0b1339;
 }
 /*# sourceMappingURL=style.css.map */
+
+.section-2 {
+  min-height: 220vh;
+  z-index: 100; 
+  background-color: rgb(0, 48, 80);
+  position: sticky;
+  /*position: relative;*/
+  top: 0vh;
+}
+
+.section-2 h1 {
+  font-size: 4.3rem;
+  padding-top: 70px;
+  text-align: center;
+  color:  #fff;
+}
+
+.section-2 .intro-p {
+  font-size: 1.3rem;
+  padding-top: 20px;
+  text-align: center;
+  color:  #fff;
+  margin:  0 auto;
+  max-width:  60%;
+}
+
+.section-2 .line {
+  width: 10%;
+  border: 2.5px solid #F2962F !important;
+  border-radius: 5px;
+  background: #F2962F !important;
+  margin: 10px auto;
+}
+
+.section-2.dark {
+  background-color: #020422;
+}
+
+.timeline {
+  margin-top: 70px ;
+}
+
+.timeline__content {
+  border: 2px solid #3c1053;
+  background: linear-gradient(to right, #ad5389, #3c1053);
+  color:  #fff;
+}
+

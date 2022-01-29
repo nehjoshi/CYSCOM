@@ -31,6 +31,7 @@ ck.addEventListener("change", () => {
     document.getElementById("wave").setAttribute("fill", ck.checked ? "#0b1339" : "#003b4d");
     document.getElementsByTagName("main")[0].classList.toggle("dark");
     document.querySelector(".section-1").classList.toggle("dark");
+    document.querySelector(".section-2").classList.toggle("dark");
 })
 
 let count = 0;
