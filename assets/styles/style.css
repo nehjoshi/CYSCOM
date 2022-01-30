@@ -12,7 +12,10 @@
   font-family: Nunito;
   scroll-behavior: smooth;
 }
-
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
 body {
   overflow-x: hidden;
 }
@@ -581,8 +584,12 @@ main.dark .main-wrapper .left .button {
 }
 
 .timeline__content {
-  border: 2px solid #3c1053;
-  background: linear-gradient(to right, #ad5389, #3c1053);
+  border: none;
+  /* background: linear-gradient(to right, #ad5389, #3c1053); */
+  background: #020422;
   color:  #fff;
+}
+.timeline__content.dark {
+  background: #0b1339;
 }
 

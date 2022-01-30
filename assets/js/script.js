@@ -32,6 +32,10 @@ ck.addEventListener("change", () => {
     document.getElementsByTagName("main")[0].classList.toggle("dark");
     document.querySelector(".section-1").classList.toggle("dark");
     document.querySelector(".section-2").classList.toggle("dark");
+    document.querySelectorAll(".timeline__content").forEach(item => {
+        item.classList.toggle("dark");
+    });
+
 })
 
 let count = 0;
@@ -61,5 +65,4 @@ toggler.addEventListener("click", () => {
     document.getElementById("dropdown").style.display == "flex" ? (
      document.getElementById("dropdown").style.animationName="dropup",document.getElementById("dropdown").style.display = "none" ): (document.getElementById("dropdown").style.display = "flex",
     document.getElementById("dropdown").style.animationName = "dropdown")
-
 })

@@ -2,178 +2,192 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/styles/timeline.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-    <script src="https://kit.fontawesome.com/fc236c3dc0.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="icon" href="assets/images/logo.png" />
-    <title>Cybersecurity Community (CYSCOM) VITCC</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/styles/timeline.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/fc236c3dc0.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="icon" href="assets/images/logo.png" />
+  <title>Cybersecurity Community (CYSCOM) VITCC</title>
 </head>
 
 <body>
 
 
 
-    <nav class="nav">
-        <div class="toggler">
-            <input type="checkbox" class="checkbox" id="checkbox">
-            <label for="checkbox" class="label">
-                <i class="fas fa-sun"></i>
-                <i class="fas fa-moon"></i>
-                <div class="ball"></div>
-            </label>
-        </div>
-        <img src="assets/images/logo.png" id="logo">
-        <p id="name">CYSCOM</p>
-        <ul>
-            <li class="active">Home</li>
-            <li>Our Team</li>
-            <li>Leaderboard</li>
-            <li>Blogs</li>
-        </ul>
-        <div class="open-source">OPEN SOURCE</div>
-        <i class="fas fa-chevron-circle-down burger" id="nav-toggler"></i>
-    </nav>
-
-
-    <main class="main">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="waves">
-            <path fill="#003b4d" fill-opacity="1" id="wave"
-                d="M0,160L120,144C240,128,480,96,720,106.7C960,117,1200,171,1320,197.3L1440,224L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
-            </path>
-        </svg>
-        <div class="main-wrapper">
-            <div class="left">
-                <h1 class="animate__animated animate__fadeInDown">
-                    Think before you <span id="click">click</span>.
-                </h1>
-                <p class="animate__animated animate__fadeInUp">Started off with a few people having cyber safety in
-                    mind, the club now boasts a big gathering of
-                    members and associates alike. Join us on our mission to make the cyber space a safer place.</p>
-                <a href="#section1">
-                    <div class="button">READ MORE</div>
-                </a>
-            </div>
-            <div class="right">
-                <img src="assets/images/lock.png" alt="" style="width: 300px;" id="lock">
-            </div>
-        </div>
-    </main>
-
-    <div class="dropdown" id="dropdown">
-        <ul>
-            <li class="active-dropdown">Home</li>
-            <li>Our Team</li>
-            <li>Leaderboard</li>
-            <li>Blogs</li>
-        </ul>
+  <nav class="nav">
+    <div class="toggler">
+      <input type="checkbox" class="checkbox" id="checkbox">
+      <label for="checkbox" class="label">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+        <div class="ball"></div>
+      </label>
     </div>
+    <img src="assets/images/logo.png" id="logo">
+    <p id="name">CYSCOM</p>
+    <ul>
+      <li class="active">Home</li>
+      <li><a href="team.html">Our Team</a></li>
+      <li>Leaderboard</li>
+      <li>Blogs</li>
+    </ul>
+    <div class="open-source">OPEN SOURCE</div>
+    <i class="fas fa-chevron-circle-down burger" id="nav-toggler"></i>
+  </nav>
 
-    <section class="section-1" id="section1">
-        <h1>Our Mission</h1>
-        <p>The Cybersecurity Student Community (CYSCOM), VITCC aims to spread awareness about cybersecurity</p>
-        <div class="line"></div>
-        <div class="container">
-            <div class="row mt-5 ">
-                <div class="col-lg-3 col-md-12 info-card">
-                    <img src="assets/images/blogs.png" alt="">
-                    <h2 class="mt-5">Blogs</h2>
-                    <p>We spread awareness regarding cybersecurity through weekly blogs, social media posts and more.
-                    </p>
-                </div>
-                <div class="col-lg-3 col-md-12 info-card">
-                    <img src="assets/images/events.png" alt="">
-                    <h2>Events</h2>
-                    <p>Speaker sessions, competitions and periodic conferences all help to spread the message of
-                        security.</p>
-                </div>
-                <div class="col-lg-3 col-md-12 info-card">
-                    <img src="assets/images/open-source.png" alt="">
-                    <h2>Open Source</h2>
-                    <p>We believe in maintaining a completely transparent and open source of code. Anyone, from anywhere can access it.</p>
-                </div>
-                <div class="col-lg-3 col-md-12 info-card">
-                    <img src="assets/images/innovation.png" alt="">
-                    <h2>Innovation</h2>
-                    <p>With continuous projects and new ideas, we aim to create unique tools to spread awareness on cybersecurity.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="section-2" id="section2">
-        <h1>Timeline</h1>
-        <div class="intro-p">The OWASP VIT Student Chapter was formed in 2016 and ever since it’s had one aim only, spreading awareness about cyber security and malware as well as ransomware threats in society and circles of students and teaching them how to deploy counter measures through various events and undertakings.</div>
-        <div class="line"></div>
-<div class="timeline container">
-  <div class="timeline__wrap">
-    <div class="timeline__items">
-      <div class="timeline__item">
-        <div class="timeline__content">
-          <h2>August, 2016</h2>
-          <p>OWASP VITCC Student Chapter Created with Sharad Agrawal becoming the First President of the Student Chapter.</p>
-        </div>
+
+
+  <main class="main">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="waves">
+      <path fill="#003b4d" fill-opacity="1" id="wave"
+        d="M0,160L120,144C240,128,480,96,720,106.7C960,117,1200,171,1320,197.3L1440,224L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
+      </path>
+    </svg>
+    <div class="main-wrapper">
+      <div class="left">
+        <h1 class="animate__animated animate__fadeInDown">
+          Think before you <span id="click">click</span>.
+        </h1>
+        <p class="animate__animated animate__fadeInUp">Started off with a few people having cyber safety in
+          mind, the club now boasts a big gathering of
+          members and associates alike. Join us on our mission to make the cyber space a safer place.</p>
+        <a href="#section1">
+          <div class="button">READ MORE</div>
+        </a>
       </div>
-      <div class="timeline__item">
-        <div class="timeline__content">
-          <h2>November 28, 2017</h2>
-          <p>Aditya Dobriyal becomes the Second President of the Student Chapter.</p>
-        </div>
-      </div>
-      <div class="timeline__item">
-        <div class="timeline__content">
-          <h2>November, 2018</h2>
-          <p>ICRTAC-CPS 2018 conducted by OWASP.</p>
-        </div>
-      </div>
-      <div class="timeline__item">
-        <div class="timeline__content">
-          <h2>December 7, 2018</h2>
-          <p>Rajdeep Singh becomes the Third President of the Student Chapter.</p>
-        </div>
-      </div>
-      <div class="timeline__item">
-        <div class="timeline__content">
-          <h2>November, 2019</h2>
-          <p>ICRTAC-DTI 2019 conducted by OWASP.</p>
-        </div>
-      </div>
-      <div class="timeline__item">
-        <div class="timeline__content">
-          <h2>December 17, 2019</h2>
-          <p>Arnav Tripathy becomes the Fourth President of the Student Chapter.</p>
-        </div>
-      </div>
-      <div class="timeline__item">
-        <div class="timeline__content">
-          <h2>February 14, 2020</h2>
-          <p>OWASP VITCC conducts a hackathon with 100+ participants!</p>
-        </div>
-      </div>
-      <div class="timeline__item">
-        <div class="timeline__content">
-          <h2>April 31, 2021</h2>
-          <p>OWASP VITCC conducts TetraFlip, it's largest ever Hackathon, with 500+ participants.</p>
-        </div>
+      <div class="right">
+        <img src="assets/images/lock.png" alt="" style="width: 300px;" id="lock">
       </div>
     </div>
+  </main>
+
+  <div class="dropdown" id="dropdown">
+    <ul>
+      <li class="active-dropdown">Home</li>
+      <li><a href="team.html">Our Team</a></li>
+      <li>Leaderboard</li>
+      <li>Blogs</li>
+    </ul>
   </div>
-</div>
-    </section>
-    <section style="height: 100vh; z-index: 100; background-color: rgb(0, 111, 126); position: sticky; top: 0vh;"></section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/timeline.min.js"></script>
-    <script src="assets/js/timeline.js"></script>
+  <section class="section-1" id="section1">
+    <h1>Our Mission</h1>
+    <p>The Cybersecurity Student Community (CYSCOM), VITCC aims to spread awareness about cybersecurity</p>
+    <div class="line"></div>
+    <div class="container">
+      <div class="row mt-5 ">
+        <div class="col-lg-3 col-md-12 info-card">
+          <img src="assets/images/blogs.png" alt="">
+          <h2 class="mt-5">Blogs</h2>
+          <p>We spread awareness regarding cybersecurity through weekly blogs, social media posts and more.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-12 info-card">
+          <img src="assets/images/events.png" alt="">
+          <h2>Events</h2>
+          <p>Speaker sessions, competitions and periodic conferences all help to spread the message of
+            security.</p>
+        </div>
+        <div class="col-lg-3 col-md-12 info-card">
+          <img src="assets/images/open-source.png" alt="">
+          <h2>Open Source</h2>
+          <p>We believe in maintaining a completely transparent and open source of code. Anyone, from anywhere can
+            access it.</p>
+        </div>
+        <div class="col-lg-3 col-md-12 info-card">
+          <img src="assets/images/innovation.png" alt="">
+          <h2>Innovation</h2>
+          <p>With continuous projects and new ideas, we aim to create unique tools to spread awareness on cybersecurity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-2" id="section2">
+    <h1>Timeline</h1>
+    <div class="intro-p">The Cybersecurity Student Community (CYSCOM) was formed in 2022 and ever since it has had one
+      aim only, spreading awareness about cyber security and malware as well as ransomware threats in society and
+      circles of students and teaching them how to deploy counter measures through various events and undertakings.
+    </div>
+    <div class="line"></div>
+    <div class="timeline container">
+      <div class="timeline__wrap">
+        <div class="timeline__items">
+          <div class="timeline__item">
+            <div class="timeline__content">
+              <h2>January 10th, 2022</h2>
+              <p>CYSCOM is proposed for approval.</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__content">
+              <h2>January 15th, 2022</h2>
+              <p>The Cybersecurity Student Community (CYSCOM) is officially formed.</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__content">
+              <h2>January 30th, 2022</h2>
+              <p>The end of CYSCOM's first event: BlockTalk</p>
+            </div>
+          </div>
+          <!-- <div class="timeline__item">
+            <div class="timeline__content">
+              <h2>November, 2018</h2>
+              <p>ICRTAC-CPS 2018 conducted by OWASP.</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__content">
+              <h2>December 7, 2018</h2>
+              <p>Rajdeep Singh becomes the Third President of the Student Chapter.</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__content">
+              <h2>November, 2019</h2>
+              <p>ICRTAC-DTI 2019 conducted by OWASP.</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__content">
+              <h2>December 17, 2019</h2>
+              <p>Arnav Tripathy becomes the Fourth President of the Student Chapter.</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__content">
+              <h2>February 14, 2020</h2>
+              <p>OWASP VITCC conducts a hackathon with 100+ participants!</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__content">
+              <h2>April 31, 2021</h2>
+              <p>OWASP VITCC conducts TetraFlip, it's largest ever Hackathon, with 500+ participants.</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section style="height: 100vh; z-index: 100; background-color: rgb(0, 111, 126); position: sticky; top: 0vh;"> -->
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/timeline.min.js"></script>
+  <script src="assets/js/timeline.js"></script>
 
 </body>
 
