@@ -1,0 +1,90 @@
+body {
+	background: linear-gradient(to right, #9796f0, #fbc7d4);
+}
+
+.team h1 {
+	/*padding-top:  100px;*/
+}
+
+.team-wrapper {
+	display: grid;
+  	grid-template-columns: repeat(3, 1fr);
+}
+
+.team-grid, .team-grid-text {
+	margin:  50px 20px;
+	position:  relative;
+	max-height:  75vh;
+	height:  75vh;
+	overflow: hidden;
+}
+
+.team-grid-text {
+	display: flex;
+	align-items:  center;
+	justify-content: center;
+}
+
+.team-grid img {
+	width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.overlay-1, .overlay-2, .overlay-3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.1;
+  z-index:  -99;
+  transition: .5s ease;
+  /*background-color: #008CBA;*/
+  background: rgba(121,125,128,.5);
+}
+
+.one:hover .overlay-1 {
+  	opacity: 1;
+    z-index: 100;
+}
+
+.two:hover .overlay-2 {
+  	opacity: 1;
+    z-index: 100;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.team-landing {
+	min-height:  100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #A90011;
+	color:  white;
+}
+
+
+.team-1 {
+	background: #FBEBD8;
+	color:  black;
+}
+
+.progress-bar:before {
+	content: 'hey';
+	position: absolute ;
+	left: -28px;
+}
