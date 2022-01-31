@@ -593,3 +593,34 @@ main.dark .main-wrapper .left .button {
   background: #0b1339;
 }
 
+
+.section-3 {
+  height: 100vh;
+  z-index: 100;
+  background:  #fff;
+  position: sticky;
+  top: 0vh;
+}
+
+.section-3 h1 {
+  font-size: 4.3rem;
+  padding-top: 70px;
+  text-align: center;
+}
+
+.section-3 .intro-p {
+  font-size: 1.3rem;
+  padding-top: 20px;
+  text-align: center;
+  margin:  0 auto;
+  max-width:  60%;
+}
+
+.section-3 .line {
+  width: 10%;
+  border: 2.5px solid #F2962F !important;
+  border-radius: 5px;
+  background: #F2962F !important;
+  margin: 10px auto;
+}
+
